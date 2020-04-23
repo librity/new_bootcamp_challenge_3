@@ -1,29 +1,142 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap");
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+html,
 body {
-  font-size: 14px;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
 }
 
-div {
+a {
+  text-decoration: none;
+  color: #666;
+
+  text-transform: capitalize;
+}
+
+a:hover {
+  color: #ffb774;
+}
+
+/* ul,ol  {
+  list-style: none;
+} */
+
+#root {
+  margin: 0;
+  padding: 0;
+}
+
+.content {
+  min-width: 100vw;
+  min-height: 100vh;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: linear-gradient(-45deg, #ffa95f, #fd0058);
+}
+
+.root_container {
   width: 100%;
   margin: 20px;
 }
 
-div li {
+.root_container li {
   display: flex;
   align-items: center;
 }
 
-div li + li {
+.root_container li + li {
   margin-top: 15px;
 }
 
-button {
-  background: #7159c1;
+.repo_list {
+  margin-right: 20px;
+}
+
+.repo {
+  background-color: #fff;
+  padding: 15px;
+  border-radius: 5px;
+  display: flex;
+  align-items: stretch;
+  justify-content: center;
+}
+
+.repo_link {
+  margin-right: 15px;
+}
+
+.remove_repo_button {
+  background: #fd0058;
+  border-radius: 5px;
+  color: #fff;
+  border: 0;
+  padding: 10px 15px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.new_repo_form {
+  display: flex;
+  flex-direction: column;
+}
+
+.repo_input_label {
+  color: #fff;
+  margin-bottom: 5px;
+  font-size: 1.2em;
+}
+
+.repo_input {
+  margin-bottom: 10px;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+
+  color: #777;
+}
+
+.repo_tech_input {
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  margin-right: 5px;
+
+  color: #777;
+}
+
+.repo_input_tech {
+  display: flex;
+  flex-direction: column;
+}
+
+.add_tech_button {
+  border: none;
+  padding: 5px 15px;
+  font-size: 1.5em;
+  background: #46b5ff;
+  border-radius: 5px;
+  color: #fff;
+}
+
+.repo_input_tech_input_button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.add_repo_button {
+  background: #ff9f46;
+  border-radius: 5px;
   color: #fff;
   border: 0;
   padding: 10px 15px;
@@ -33,7 +146,21 @@ button {
   font-size: 14px;
 }
 
-div li button {
-  margin: 0 15px;
-  background: #ca4949;
+.input_techs {
+  margin-left: 20px;
+  background-color: #fff;
+
+  color: #777;
+
+  padding: 15px;
+  border-radius: 5px;
+}
+
+.tech_index {
+  margin-top: 10px;
+  color: #555;
+}
+
+.tech_index:first-child {
+  margin-top: 0;
 }
